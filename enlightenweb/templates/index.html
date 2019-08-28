@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<div class="content">
+<video autoplay muted loop id="myVideo">
+  <source src="{% static 'video.mp4' %}" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="videocontent">
+  <h1>Enlighten</h1>
+  <p>Alianza - Quel'thalas US</p>
+
+</div> 
+</div>
+{% endblock %}
